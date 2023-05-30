@@ -1,0 +1,64 @@
+extends layout
+
+block content
+  .w3-card-4
+    header.w3-container.w3-teal
+      h1 Registo [Nº de Registo: #{r._id}] #[a(href="/") VOLTAR]
+    .w3-container
+      table.w3-table-all
+        tr
+          th Número de Registo
+          td= r["Número de Registo"]
+        tr
+          th Código de rua
+          td= r["Código de rua"]
+        tr
+          th Rua
+          td= r.Rua
+        tr
+          th Local
+          td= r.Local
+        tr
+          th Freguesia
+          td= r.Freguesia
+        tr
+          th Espécie
+          td= r["Espécie"]
+        tr
+          th Nome Científico
+          td= r["Nome Científico"]
+        tr
+          th Origem
+          td= r.Origem
+        tr
+          th Data de Plantação
+          td= r["Data de Plantação"]
+        tr
+          th Estado
+          td= r.Estado
+        tr
+          th Caldeira
+          td= r.Caldeira
+        tr
+          th Tutor
+          td= r.Tutor
+        tr
+          th Implantação
+          td= r["Implantação"]
+        tr
+          th Gestor
+          td= r.Gestor
+        tr
+          th Data de actualização
+          td= r["Data de actualização"]
+        tr
+          th Número de intervenções
+          td= r["Número de intervenções"]
+        tr
+          th Id
+          td= r._id
+        
+    footer.w3-container.w3-teal
+      h5 Generated for Exame by Gonçalo Braga(A97541)
+
+    
